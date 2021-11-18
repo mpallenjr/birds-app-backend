@@ -11,6 +11,11 @@ class BirdsController < ApplicationController
       description: params[:description]
     )
     render json: create_birds.as_json 
-    
+
+  end
+  def show
+    the_id = params[:id]
+    show_birds = Bird.find(the_id)
+    render json: show_birds.as_json 
   end
 end
