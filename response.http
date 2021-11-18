@@ -2,3 +2,14 @@
 GET http://localhost:3000/birds
 
 ### Create Action
+POST http://localhost:3000/birds
+Content-Type: application/json
+
+{
+
+  "breed": "Keel-billed Toucan",
+  "location": "Columbia",
+  "image_url": "https://www.coopsandcages.com.au/wp-content/uploads/2014/01/28-Bird-Keel-billed-Toucan.jpg",
+  "description": "Keel-billed toucans are around 17 to 20 inches tall. They are native to the region including the Southern Mexico, Venezuela, and Columbia. They can live up to 20 years and are good trick performers. Keel-billed toucans are mainly black with a yellow chest and neck. They have red feathers at the tip of their tail and blue feet. Their large bill is mostly green with orange sides and a red tip. These birds are quite vocal and make croak-like calls. They are also extremely active, which means more space for their cage."
+
+}
