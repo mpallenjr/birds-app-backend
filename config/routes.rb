@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   get "/birds" => "birds#index"
   post "/birds" => "birds#create"
   get "/birds/:id" => "birds#show"
+
+  delete "birds/:id" => "birds#destroy"
 end

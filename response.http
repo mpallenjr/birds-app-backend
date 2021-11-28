@@ -15,4 +15,7 @@ Content-Type: application/json
 }
 
 ### Show Action
-GET http://localhost:3000/birds/show/5
+GET http://localhost:3000/birds/9
+
+### Delete Action
+DELETE http://localhost:3000/birds/9

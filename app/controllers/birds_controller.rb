@@ -18,4 +18,12 @@ class BirdsController < ApplicationController
     show_birds = Bird.find(the_id)
     render json: show_birds.as_json 
   end
+
+  def destroy 
+    the_id = params[:id]
+    destroy_birds = Bird.find(the_id)
+    destroy_birds.destroy
+    render json: {message: "The Bird has been destroyed."}
+  end
+
 end
