@@ -15,4 +15,4 @@ Content-Type: application/json
 }
 
 ### Show Action
-GET http://localhost:3000/birds/1
+GET http://localhost:3000/birds/show/5
