@@ -1,7 +1,16 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+Bird.create!([
+  {breed: "Golden Eagle", location: "Northern Hemisphere", image_url: "https://www.coopsandcages.com.au/wp-content/uploads/2014/01/18-Bird-Golden-Eagle.jpg", description: "Golden Eagles are among the common birds of prey that inhabit the Northern Hemisphere. They are dark brown with a golden-brown plumage on their napes. Young ones usually have white colouration on their tail and their wings. Golden Eagles are known as powerful hunters with only a few avian competitors in terms of their size.", created_by: 1},
+  {breed: "Crimson Rosella", location: "Australia", image_url: "https://www.coopsandcages.com.au/wp-content/uploads/2014/01/13-Bird-Crimson-Rosella1.jpg", description: "Crimson Rosellas are parrots that are found in the eastern and southeastern Australia. They are around 14 inches long. Young birds are mainly green, but they turn red as they get older. All subspecies have black-scalloped and blue margined wings with blue cheeks. They also have a mainly blue tail with red colouration. Crimson Rosellas are relatively quiet but love to whistle.", created_by: 1},
+  {breed: "Black-throated Sparrow", location: "SW Mexico", image_url: "https://www.coopsandcages.com.au/wp-content/uploads/2014/01/5-Bird-Black-Throated-Sparrow1.jpg", description: "Black-throated Sparrows are small birds often living in the southwestern US and Mexico. They are about 4.5 to 5.5 inches tall with a black and white head and a pale grey colour for their upper body. They sing a tinkling, bell-like song. These sparrow species like to feed on seeds and insects and prefer to travel in small groups.", created_by: 1},
+  {breed: "Northern Cardinal", location: "Midwest US", image_url: "https://www.coopsandcages.com.au/wp-content/uploads/2014/01/32-Bird-Northern-Cardinal.jpg", description: "Northern Cardinals are mid-sized songbirds that are around 8.3 inches tall. They are noted for their crest on the head as well as the mask on their face. Females have a grey mask, while males have black. The males are of brilliant crimson red colours, while the females are of a greyish-brown tone. They have a cone-shaped beak. Northern Cardinals mostly eat grains, weed seeds, and fruits.", created_by: 1},
+  {breed: "Java Hill Mynah", location: "South Asia", image_url: "https://www.coopsandcages.com.au/wp-content/uploads/2014/01/27-Bird-Java-Hill-Mynah.jpg", description: "Java Hill Mynahs are small birds, about 10 inches tall. They originated in South Asia and are expected to live up to 15 years. They are good at mimicking the human language, although some can’t do it. These mynahs are active and tend to cock their heads when they are talking. They are curious, playful, and may sometimes make people believe that they are actual speaking humans.", created_by: 1},
+  {breed: "Keel-billed Toucan", location: nil, image_url: "https://www.coopsandcages.com.au/wp-content/uploads/2014/01/28-Bird-Keel-billed-Toucan.jpg", description: "Keel-billed toucans are around 17 to 20 inches tall. They are native to the region including the Southern Mexico, Venezuela, and Columbia. They can live up to 20 years and are good trick performers. Keel-billed toucans are mainly black with a yellow chest and neck. They have red feathers at the tip of their tail and blue feet. Their large bill is mostly green with orange sides and a red tip. These birds are quite vocal and make croak-like calls. They are also extremely active, which means more space for their cage.", created_by: 1},
+  {breed: "Pigeon", location: nil, image_url: "https://www.allaboutbirds.org/guide/assets/photo/308074031-480px.jpg", description: "Rats of the Sky!!!", created_by: 1},
+  {breed: "Bald Eagle", location: nil, image_url: "https://cdn.vox-cdn.com/thumbor/FThFEBV-J8ow3-lelFtc_QUq90U=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/21762097/1183851779.jpg.jpg", description: "God Bless America", created_by: 1},
+  {breed: "Blue Jay", location: nil, image_url: "https://www.allaboutbirds.org/guide/assets/photo/311635911-480px.jpg", description: "I think thats where they're from.  They might be from Canada though, Eh?", created_by: 2}
+])
+User.create!([
+  {email: "mike@gmail.com", password_digest: "password"},
+  {email: "fred@gmail.com", password_digest: "password"},
+  {email: "james@gmail.com", password_digest: "password"}
+])
